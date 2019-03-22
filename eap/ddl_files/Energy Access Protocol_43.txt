@@ -8,7 +8,7 @@ Database Driver: MySQL Connector Java mysql-connector-java-5.1.40 ( Revision: 40
 */
 
 /* UPDATE DDL */
-    create table secondarySchema.`EAP_PermitDetails` (
+    create table `EAP_PermitDetails` (
         `ID` integer not null auto_increment,
         `NAME` VARCHAR(250),
         `TYPE` VARCHAR(250),

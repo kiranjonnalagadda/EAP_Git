@@ -1,0 +1,17 @@
+/*
+Data Store: EAP Tables
+Created: 2019-03-05T12:41:32.025Z
+By: simranjits
+Appian Version: 18.2.160.0
+Target Database: MySQL 5.7.24
+Database Driver: MySQL Connector Java mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )
+*/
+
+/* UPDATE DDL */
+    create table secondarySchema.`EAP_PermitDetails` (
+        `ID` integer not null auto_increment,
+        `NAME` VARCHAR(250),
+        `TYPE` VARCHAR(250),
+        primary key (`ID`)
+    ) ENGINE=InnoDB;
+

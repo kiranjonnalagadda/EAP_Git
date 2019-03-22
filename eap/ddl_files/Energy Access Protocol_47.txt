@@ -1,0 +1,2 @@
+INSERT INTO `EAP_PermitDetails` (ID, NAME, TYPE)
+VALUES (1, 'Kiran','Norway');

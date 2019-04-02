@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <applicationHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <versionUuid>_a-0000e236-2bab-8000-23f0-01ef9001ef90_22526</versionUuid>
+    <versionUuid>_a-0000e21d-e06a-8000-7d53-01ef9001ef90_55783</versionUuid>
     <application>
-        <name>Energy Access Protocol</name>
+        <name>Environmental Activity Permits</name>
         <uuid>_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669</uuid>
-        <description>All objects related to Energy Access Protocol application.</description>
+        <description>All objects related to Environmental Activity Permits application.</description>
         <parentUuid>SYSTEM_APPLICATIONS_ROOT</parentUuid>
         <visibility>
             <advertise>false</advertise>
@@ -235,7 +235,7 @@
             </role>
             <role allowForAll="false" inherit="false" name="administrators">
                 <users>
-                    <userUuid>simranjits</userUuid>
+                    <userUuid>shwetad</userUuid>
                 </users>
                 <groups>
                     <groupUuid>_e-0000e21d-e05a-8000-7d4f-011e94011e94_61</groupUuid>
@@ -258,6 +258,5 @@
     <history>
         <historyInfo versionUuid="_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48718"/>
         <historyInfo versionUuid="_a-0000e21d-e06a-8000-7d53-01ef9001ef90_55783"/>
-        <historyInfo versionUuid="_a-0000e236-2bab-8000-23f0-01ef9001ef90_22526"/>
     </history>
-</applicationHaul><!--updated on 2019-03-29T18:00:21.800-->
+</applicationHaul><!--updated on 2019-04-02T14:25:30.188-->

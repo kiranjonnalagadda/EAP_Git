@@ -1,25 +1,26 @@
-Success (7):
+Success (8):
 datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails "{urn:com:appian:types:EAP}EAP_PermitDetails"
 dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 "EAP Tables"
 group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 "EAP All Users"
 content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 "Environmental Activity Permits"
 content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 "EAP_getUsername"
 content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 "EAP_USERS_GROUP"
+content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 "testInter"
 application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 "Environmental Activity Permits"
 
 Referenced precedents that were not exported (1):
 user shwetad shwetad
 
 Trace:
-2019-04-02 09:51:19.237 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Begin transport.
-2019-04-02 09:51:19.237 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Retrieving object data.
-2019-04-02 09:51:19.242 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 App associated objects: [datatype=[{urn:com:appian:types:EAP}EAP_PermitDetails],dataStore=[_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693],group=[_e-0000e21d-e05a-8000-7d4f-011e94011e94_61],content=[_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676, _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681, _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778]]
-2019-04-02 09:51:19.246 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Invalid associated objects: []
-2019-04-02 09:51:19.246 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Adding valid associated objects to be exported: GlobalBindingMap[datatype={{urn:com:appian:types:EAP}EAP_PermitDetails=2654},dataStore={_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693=5203},group={_e-0000e21d-e05a-8000-7d4f-011e94011e94_61=20},content={_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676=5204, _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681=5209, _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778=5366}]
-2019-04-02 09:51:19.246 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Setting uuids of object references.
-2019-04-02 09:51:19.247 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: Application.forum
-2019-04-02 09:51:19.247 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: Application.parent
-2019-04-02 09:51:19.25 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@6b230ca8[
+2019-04-02 10:08:23.925 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Begin transport.
+2019-04-02 10:08:23.925 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Retrieving object data.
+2019-04-02 10:08:23.93 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 App associated objects: [datatype=[{urn:com:appian:types:EAP}EAP_PermitDetails],dataStore=[_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693],group=[_e-0000e21d-e05a-8000-7d4f-011e94011e94_61],content=[_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676, _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681, _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778, _a-0000e255-ca76-8000-23f0-01ef9001ef90_30624, _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656]]
+2019-04-02 10:08:23.935 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Invalid associated objects: [content=[_a-0000e255-ca76-8000-23f0-01ef9001ef90_30624]]
+2019-04-02 10:08:23.935 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Adding valid associated objects to be exported: GlobalBindingMap[datatype={{urn:com:appian:types:EAP}EAP_PermitDetails=2654},dataStore={_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693=5203},group={_e-0000e21d-e05a-8000-7d4f-011e94011e94_61=20},content={_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676=5204, _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681=5209, _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778=5366, _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656=5404}]
+2019-04-02 10:08:23.935 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Setting uuids of object references.
+2019-04-02 10:08:23.935 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: Application.forum
+2019-04-02 10:08:23.935 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: Application.parent
+2019-04-02 10:08:23.938 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@2f856cbd[
   ContentRole[name=readers,inherit=false,allowForAll=false]
   ContentRole[name=authors,inherit=false,allowForAll=false]
   ContentRole[name=administrators,usernames=[shwetad],groupIds=[20],inherit=false,allowForAll=false]
@@ -28,51 +29,51 @@ Trace:
   ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
   securityVector=129:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=true,SEC_INH_ADMIN=false,SEC_INH_EDITOR=false,SEC_INH_VIEWER=false,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
 ]
-2019-04-02 09:51:19.25 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.25 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.25 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=administrators,usernames=[shwetad],groupIds=[20],inherit=false,allowForAll=false]
-2019-04-02 09:51:19.252 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Begin transport.
-2019-04-02 09:51:19.252 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Retrieving object data.
-2019-04-02 09:51:19.258 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Setting uuids of object references.
-2019-04-02 09:51:19.259 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Processing reference: Role[name=<null>]
-2019-04-02 09:51:19.259 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Processing reference: Group.groupTypeId
-2019-04-02 09:51:19.26 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Processing reference: Group.parentId
-2019-04-02 09:51:19.26 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Processing reference: Group.homePageId
-2019-04-02 09:51:19.26 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Processing reference: Role[name=<null>]
-2019-04-02 09:51:19.261 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Completing produce.
-2019-04-02 09:51:19.261 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Exporting binary resources.
-2019-04-02 09:51:19.261 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Serializing object to XML.
-2019-04-02 09:51:19.261 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Object transported.
-2019-04-02 09:51:19.261 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.261 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.261 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.261 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Begin transport.
-2019-04-02 09:51:19.262 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Retrieving object data.
-2019-04-02 09:51:19.291 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Setting uuids of object references.
-2019-04-02 09:51:19.292 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Completing produce.
-2019-04-02 09:51:19.292 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Exporting binary resources.
-2019-04-02 09:51:19.292 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Serializing object to XML.
-2019-04-02 09:51:19.293 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Object transported.
-2019-04-02 09:51:19.296 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Begin transport.
-2019-04-02 09:51:19.296 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Retrieving object data.
-2019-04-02 09:51:19.299 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Setting uuids of object references.
-2019-04-02 09:51:19.299 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: datatypeRef[id=2654]
-2019-04-02 09:51:19.3 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=administrators,groupIds=[20],inherit=false,allowForAll=false]
-2019-04-02 09:51:19.301 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.301 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.301 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.301 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.301 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.301 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Completing produce.
-2019-04-02 09:51:19.301 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Exporting binary resources.
-2019-04-02 09:51:19.301 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Serializing object to XML.
-2019-04-02 09:51:19.302 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Object transported.
-2019-04-02 09:51:19.305 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Begin transport.
-2019-04-02 09:51:19.305 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Retrieving object data.
-2019-04-02 09:51:19.314 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Setting uuids of object references.
-2019-04-02 09:51:19.314 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: RulesFolder.forum
-2019-04-02 09:51:19.314 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: RulesFolder.parent
-2019-04-02 09:51:19.317 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@5e72b156[
+2019-04-02 10:08:23.938 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2019-04-02 10:08:23.938 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2019-04-02 10:08:23.938 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=administrators,usernames=[shwetad],groupIds=[20],inherit=false,allowForAll=false]
+2019-04-02 10:08:23.941 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Begin transport.
+2019-04-02 10:08:23.941 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Retrieving object data.
+2019-04-02 10:08:23.947 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Setting uuids of object references.
+2019-04-02 10:08:23.947 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Processing reference: Role[name=<null>]
+2019-04-02 10:08:23.947 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Processing reference: Group.groupTypeId
+2019-04-02 10:08:23.949 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Processing reference: Group.parentId
+2019-04-02 10:08:23.949 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Processing reference: Group.homePageId
+2019-04-02 10:08:23.949 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Processing reference: Role[name=<null>]
+2019-04-02 10:08:23.949 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Completing produce.
+2019-04-02 10:08:23.949 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Exporting binary resources.
+2019-04-02 10:08:23.949 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Serializing object to XML.
+2019-04-02 10:08:23.951 DEBUG group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61 Object transported.
+2019-04-02 10:08:23.951 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2019-04-02 10:08:23.951 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2019-04-02 10:08:23.951 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2019-04-02 10:08:23.951 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Begin transport.
+2019-04-02 10:08:23.951 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Retrieving object data.
+2019-04-02 10:08:23.98 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Setting uuids of object references.
+2019-04-02 10:08:23.981 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Completing produce.
+2019-04-02 10:08:23.981 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Exporting binary resources.
+2019-04-02 10:08:23.981 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Serializing object to XML.
+2019-04-02 10:08:23.982 DEBUG datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails Object transported.
+2019-04-02 10:08:23.985 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Begin transport.
+2019-04-02 10:08:23.985 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Retrieving object data.
+2019-04-02 10:08:23.989 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Setting uuids of object references.
+2019-04-02 10:08:23.989 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: datatypeRef[id=2654]
+2019-04-02 10:08:23.989 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=administrators,groupIds=[20],inherit=false,allowForAll=false]
+2019-04-02 10:08:23.99 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2019-04-02 10:08:23.99 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2019-04-02 10:08:23.99 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2019-04-02 10:08:23.991 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2019-04-02 10:08:23.991 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2019-04-02 10:08:23.991 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Completing produce.
+2019-04-02 10:08:23.991 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Exporting binary resources.
+2019-04-02 10:08:23.991 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Serializing object to XML.
+2019-04-02 10:08:23.991 DEBUG dataStore 5203 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Object transported.
+2019-04-02 10:08:23.996 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Begin transport.
+2019-04-02 10:08:23.996 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Retrieving object data.
+2019-04-02 10:08:24.004 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Setting uuids of object references.
+2019-04-02 10:08:24.004 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: RulesFolder.forum
+2019-04-02 10:08:24.005 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: RulesFolder.parent
+2019-04-02 10:08:24.008 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@482b2134[
   ContentRole[name=readers,inherit=false,allowForAll=false]
   ContentRole[name=authors,inherit=false,allowForAll=false]
   ContentRole[name=administrators,groupIds=[20],inherit=false,allowForAll=false]
@@ -81,23 +82,23 @@ Trace:
   ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
   securityVector=1:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=false,SEC_INH_EDITOR=false,SEC_INH_VIEWER=false,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
 ]
-2019-04-02 09:51:19.317 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.317 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.317 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=administrators,groupIds=[20],inherit=false,allowForAll=false]
-2019-04-02 09:51:19.318 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.318 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.319 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.319 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Completing produce.
-2019-04-02 09:51:19.319 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Exporting binary resources.
-2019-04-02 09:51:19.319 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Serializing object to XML.
-2019-04-02 09:51:19.319 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Object transported.
-2019-04-02 09:51:19.32 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Begin transport.
-2019-04-02 09:51:19.32 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Retrieving object data.
-2019-04-02 09:51:19.328 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Setting uuids of object references.
-2019-04-02 09:51:19.329 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: [Content:id=5205,versionId=-1,name=EAP_getUsername,type=32,subtype=1,uuid=_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681,parent=5204]
-2019-04-02 09:51:19.329 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: FreeformRule.forum
-2019-04-02 09:51:19.329 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: FreeformRule.parent
-2019-04-02 09:51:19.332 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@21f555c[
+2019-04-02 10:08:24.008 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.008 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.008 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=administrators,groupIds=[20],inherit=false,allowForAll=false]
+2019-04-02 10:08:24.009 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.009 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.009 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.01 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Completing produce.
+2019-04-02 10:08:24.01 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Exporting binary resources.
+2019-04-02 10:08:24.01 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Serializing object to XML.
+2019-04-02 10:08:24.01 DEBUG content 5204 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676 Object transported.
+2019-04-02 10:08:24.01 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Begin transport.
+2019-04-02 10:08:24.01 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Retrieving object data.
+2019-04-02 10:08:24.02 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Setting uuids of object references.
+2019-04-02 10:08:24.02 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: [Content:id=5205,versionId=-1,name=EAP_getUsername,type=32,subtype=1,uuid=_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681,parent=5204]
+2019-04-02 10:08:24.02 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: FreeformRule.forum
+2019-04-02 10:08:24.021 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: FreeformRule.parent
+2019-04-02 10:08:24.023 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@5e77f117[
   ContentRole[name=readers,inherit=true,allowForAll=false]
   ContentRole[name=authors,inherit=true,allowForAll=false]
   ContentRole[name=administrators,inherit=true,allowForAll=false]
@@ -106,23 +107,23 @@ Trace:
   ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
   securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
 ]
-2019-04-02 09:51:19.332 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
-2019-04-02 09:51:19.332 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
-2019-04-02 09:51:19.332 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
-2019-04-02 09:51:19.332 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.333 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.333 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.333 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Completing produce.
-2019-04-02 09:51:19.333 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Exporting binary resources.
-2019-04-02 09:51:19.333 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Serializing object to XML.
-2019-04-02 09:51:19.334 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Object transported.
-2019-04-02 09:51:19.334 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Begin transport.
-2019-04-02 09:51:19.334 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Retrieving object data.
-2019-04-02 09:51:19.341 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Setting uuids of object references.
-2019-04-02 09:51:19.341 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: [Content:id=5206,versionId=-1,name=EAP_USERS_GROUP,type=32,subtype=0,uuid=_a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778,parent=5204]
-2019-04-02 09:51:19.341 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: Constant.forum
-2019-04-02 09:51:19.342 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: Constant.parent
-2019-04-02 09:51:19.345 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@37a5febe[
+2019-04-02 10:08:24.023 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2019-04-02 10:08:24.023 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2019-04-02 10:08:24.024 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2019-04-02 10:08:24.024 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.024 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.024 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.024 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Completing produce.
+2019-04-02 10:08:24.024 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Exporting binary resources.
+2019-04-02 10:08:24.024 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Serializing object to XML.
+2019-04-02 10:08:24.025 DEBUG content 5209 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48681 Object transported.
+2019-04-02 10:08:24.025 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Begin transport.
+2019-04-02 10:08:24.025 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Retrieving object data.
+2019-04-02 10:08:24.032 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Setting uuids of object references.
+2019-04-02 10:08:24.032 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: [Content:id=5206,versionId=-1,name=EAP_USERS_GROUP,type=32,subtype=0,uuid=_a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778,parent=5204]
+2019-04-02 10:08:24.032 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: Constant.forum
+2019-04-02 10:08:24.033 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: Constant.parent
+2019-04-02 10:08:24.036 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@4636ba42[
   ContentRole[name=readers,inherit=true,allowForAll=false]
   ContentRole[name=authors,inherit=true,allowForAll=false]
   ContentRole[name=administrators,inherit=true,allowForAll=false]
@@ -131,18 +132,43 @@ Trace:
   ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
   securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
 ]
-2019-04-02 09:51:19.345 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
-2019-04-02 09:51:19.345 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
-2019-04-02 09:51:19.345 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
-2019-04-02 09:51:19.345 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.345 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.345 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
-2019-04-02 09:51:19.345 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Registering export properties.
-2019-04-02 09:51:19.345 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Completing produce.
-2019-04-02 09:51:19.345 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Exporting binary resources.
-2019-04-02 09:51:19.345 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Serializing object to XML.
-2019-04-02 09:51:19.349 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Object transported.
-2019-04-02 09:51:19.349 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Completing produce.
-2019-04-02 09:51:19.349 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Exporting binary resources.
-2019-04-02 09:51:19.349 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Serializing object to XML.
-2019-04-02 09:51:19.351 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Object transported.
+2019-04-02 10:08:24.036 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2019-04-02 10:08:24.036 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2019-04-02 10:08:24.036 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2019-04-02 10:08:24.036 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.036 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.036 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.036 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Registering export properties.
+2019-04-02 10:08:24.036 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Completing produce.
+2019-04-02 10:08:24.036 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Exporting binary resources.
+2019-04-02 10:08:24.036 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Serializing object to XML.
+2019-04-02 10:08:24.04 DEBUG content 5366 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_55778 Object transported.
+2019-04-02 10:08:24.04 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Begin transport.
+2019-04-02 10:08:24.04 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Retrieving object data.
+2019-04-02 10:08:24.049 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Setting uuids of object references.
+2019-04-02 10:08:24.049 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Processing reference: [Content:id=5404,versionId=-1,name=testInter,type=32,subtype=6,uuid=_a-0000e255-ca76-8000-23f0-01ef9001ef90_30656,parent=5204]
+2019-04-02 10:08:24.049 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Processing reference: Interface.forum
+2019-04-02 10:08:24.05 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Processing reference: Interface.parent
+2019-04-02 10:08:24.052 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@5331ca86[
+  ContentRole[name=readers,inherit=true,allowForAll=false]
+  ContentRole[name=authors,inherit=true,allowForAll=false]
+  ContentRole[name=administrators,inherit=true,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=15:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=true,SEC_INH_EDITOR=true,SEC_INH_VIEWER=true,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2019-04-02 10:08:24.052 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Processing reference: ContentRole[name=readers,inherit=true,allowForAll=false]
+2019-04-02 10:08:24.052 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Processing reference: ContentRole[name=authors,inherit=true,allowForAll=false]
+2019-04-02 10:08:24.053 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Processing reference: ContentRole[name=administrators,inherit=true,allowForAll=false]
+2019-04-02 10:08:24.053 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.053 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.053 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2019-04-02 10:08:24.053 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Completing produce.
+2019-04-02 10:08:24.053 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Exporting binary resources.
+2019-04-02 10:08:24.053 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Serializing object to XML.
+2019-04-02 10:08:24.054 DEBUG content 5404 _a-0000e255-ca76-8000-23f0-01ef9001ef90_30656 Object transported.
+2019-04-02 10:08:24.054 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Completing produce.
+2019-04-02 10:08:24.054 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Exporting binary resources.
+2019-04-02 10:08:24.054 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Serializing object to XML.
+2019-04-02 10:08:24.056 DEBUG application 5207 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48669 Object transported.

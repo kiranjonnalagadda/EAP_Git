@@ -1,16 +1,12 @@
 Success (1):
-group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 "testGrp"
+webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 "newWebAPI"
 
 Trace:
-2019-04-02 12:35:18.337 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Begin transport.
-2019-04-02 12:35:18.337 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Retrieving object data.
-2019-04-02 12:35:18.345 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Setting uuids of object references.
-2019-04-02 12:35:18.345 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Processing reference: Role[name=<null>]
-2019-04-02 12:35:18.345 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Processing reference: Group.groupTypeId
-2019-04-02 12:35:18.347 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Processing reference: Group.parentId
-2019-04-02 12:35:18.347 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Processing reference: Group.homePageId
-2019-04-02 12:35:18.347 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Processing reference: Role[name=<null>]
-2019-04-02 12:35:18.347 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Completing produce.
-2019-04-02 12:35:18.347 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Exporting binary resources.
-2019-04-02 12:35:18.347 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Serializing object to XML.
-2019-04-02 12:35:18.347 DEBUG group 21 _e-0000e255-ca76-8000-23f0-011e94011e94_56 Object transported.
+2019-04-02 12:29:48.259 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Begin transport.
+2019-04-02 12:29:48.259 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Retrieving object data.
+2019-04-02 12:29:48.275 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Setting uuids of object references.
+2019-04-02 12:29:48.275 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Processing reference: WebApi.expression
+2019-04-02 12:29:48.276 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Completing produce.
+2019-04-02 12:29:48.276 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Exporting binary resources.
+2019-04-02 12:29:48.276 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Serializing object to XML.
+2019-04-02 12:29:48.279 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Object transported.

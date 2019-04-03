@@ -1,12 +1,22 @@
 Success (1):
-webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 "newWebAPI"
+dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 "EAP Tables"
+
+Referenced precedents that were not exported (2):
+datatype 2654 {urn:com:appian:types:EAP}EAP_PermitDetails
+group 20 _e-0000e21d-e05a-8000-7d4f-011e94011e94_61
 
 Trace:
-2019-04-03 05:25:20.439 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Begin transport.
-2019-04-03 05:25:20.439 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Retrieving object data.
-2019-04-03 05:25:20.456 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Setting uuids of object references.
-2019-04-03 05:25:20.456 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Processing reference: WebApi.expression
-2019-04-03 05:25:20.457 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Completing produce.
-2019-04-03 05:25:20.457 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Exporting binary resources.
-2019-04-03 05:25:20.457 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Serializing object to XML.
-2019-04-03 05:25:20.461 DEBUG webApi 25 a5ad2e10-1edd-4f9d-9d74-107857e96d59 Object transported.
+2019-04-03 05:19:19.069 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Begin transport.
+2019-04-03 05:19:19.069 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Retrieving object data.
+2019-04-03 05:19:19.075 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Setting uuids of object references.
+2019-04-03 05:19:19.075 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: datatypeRef[id=2654]
+2019-04-03 05:19:19.075 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=administrators,groupIds=[20],inherit=false,allowForAll=false]
+2019-04-03 05:19:19.077 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2019-04-03 05:19:19.077 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2019-04-03 05:19:19.077 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2019-04-03 05:19:19.077 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2019-04-03 05:19:19.077 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2019-04-03 05:19:19.077 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Completing produce.
+2019-04-03 05:19:19.077 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Exporting binary resources.
+2019-04-03 05:19:19.077 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Serializing object to XML.
+2019-04-03 05:19:19.077 DEBUG dataStore 5496 _a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693 Object transported.

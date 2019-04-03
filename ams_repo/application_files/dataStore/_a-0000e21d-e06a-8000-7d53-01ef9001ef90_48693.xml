@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <dataStoreHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <versionUuid>_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48715</versionUuid>
+    <versionUuid>_a-0000e255-ca76-8000-23f0-01ef9001ef90_31122</versionUuid>
     <dataStore>
         <uuid>_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48693</uuid>
         <name>EAP Tables</name>
         <description>Data store for EAP tables</description>
-        <dataSourceKey>jdbc/secondarySchema</dataSourceKey>
+        <dataSourceKey>jdbc/iACD</dataSourceKey>
         <adaptingExplicitSqlNames>false</adaptingExplicitSqlNames>
         <autoUpdateSchema>false</autoUpdateSchema>
         <entities>
@@ -16,7 +16,7 @@
             </entity>
         </entities>
     </dataStore>
-    <isPublished>false</isPublished>
+    <isPublished>true</isPublished>
     <roleMap>
         <role inherit="false" allowForAll="false" name="administrators">
             <users/>
@@ -47,5 +47,6 @@
     </roleMap>
     <history>
         <historyInfo versionUuid="_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48715"/>
+        <historyInfo versionUuid="_a-0000e255-ca76-8000-23f0-01ef9001ef90_31122"/>
     </history>
 </dataStoreHaul>

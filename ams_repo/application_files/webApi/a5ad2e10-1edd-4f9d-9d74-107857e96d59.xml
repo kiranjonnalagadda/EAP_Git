@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <webApiHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <versionUuid>f1d3f837-c838-4411-8771-7e4f21eb2154</versionUuid>
+    <versionUuid>26589955-8012-4b42-ac9c-8205fcd781c4</versionUuid>
     <webApi a:uuid="a5ad2e10-1edd-4f9d-9d74-107857e96d59" name="newWebAPI">
         <a:description></a:description>
         <a:expression>with(
-  local!pathArray: fn!cast('type!{http://www.appian.com/ae/types/2009}Text?list', http!request.pathSegments),
-  local!document: tointeger(index(local!pathArray, 1, null)),
+  local!pathArray: fn!cast(
+    'type!{http://www.appian.com/ae/types/2009}Text?list',
+    http!request.pathSegments
+  ),
+  local!document: tointeger(
+    index(
+      local!pathArray,
+      1,
+      null
+    )
+  ),
   /* We don't want to serve arbitrary documents because it could be a security risk */
-  local!extensionWhitelist: {"pdf", "txt", "png", "jpg", "jpeg"},
+  local!extensionWhitelist: {
+    "pdf",
+    "txt",
+    "png",
+    "jpg",
+    "jpeg"
+  },
   if(
     /*
     * The path must be only 1 value, the document ID, and that ID must be a number.
     * Otherwise, we return a 404 Not Found
     */
     or(
-      length(local!pathArray) &lt;&gt; 1,
-      isnull(local!document),
-      not(contains(local!extensionWhitelist, document(local!document, "extension")))
+      length(
+        local!pathArray
+      ) &lt;&gt; 1,
+      isnull(
+        local!document
+      ),
+      not(
+        contains(
+          local!extensionWhitelist,
+          document(
+            local!document,
+            "extension"
+          )
+        )
+      )
     ),
     #"SYSTEM_SYSRULES_httpResponse_v1"(
       statusCode: 404,
@@ -37,15 +64,23 @@
           name: "Content-Disposition",
           value: concat(
             "attachment; filename=""",
-            document(local!document, "name"),
+            document(
+              local!document,
+              "name"
+            ),
             ".",
-            document(local!document, "extension"),
+            document(
+              local!document,
+              "extension"
+            ),
             """"
           )
         ),
         {}
       ),
-      body: todocument(local!document)
+      body: todocument(
+        local!document
+      )
     )
   )
 )</a:expression>
@@ -69,5 +104,6 @@
     <history>
         <historyInfo versionUuid="c2821715-0a79-4345-b540-e05612d8bf0b"/>
         <historyInfo versionUuid="f1d3f837-c838-4411-8771-7e4f21eb2154"/>
+        <historyInfo versionUuid="26589955-8012-4b42-ac9c-8205fcd781c4"/>
     </history>
 </webApiHaul>

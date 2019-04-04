@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webApiHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>5927b22f-34b0-4d9e-ac25-eb92b8052aaf</versionUuid>
+    <webApi a:uuid="a5ad2e10-1edd-4f9d-9d74-107857e96d59" name="newWebAPI">
+        <a:description></a:description>
+        <a:expression>with(
+  local!pathArray: fn!cast(
+    
+    
+    
+    'type!{http://www.appian.com/ae/types/2009}Text?list',
+    http!request.pathSegments
+  ),   
+  
+  
+  
+  
+  
+  
+  local!document: tointeger(
+    index(
+      local!pathArray,
+      1,
+      null
+    )
+  ),
+  /* We don't want to serve arbitrary documents because it could be a security risk */
+  local!extensionWhitelist: {
+    "pdf",
+    "txt",
+    "png",
+    "jpg",
+    "jpeg"
+  },
+  if(
+    /*
+    * The path must be only 1 value, the document ID, and that ID must be a number.
+    * Otherwise, we return a 404 Not Found
+    */
+    or(
+      length(
+        local!pathArray
+      ) &lt;&gt; 1,
+      isnull(
+        local!document
+      ),
+      not(
+        contains(
+          local!extensionWhitelist,
+          document(
+            local!document,
+            "extension"
+          )
+        )
+      )
+    ),
+    #"SYSTEM_SYSRULES_httpResponse_v1"(
+      statusCode: 404,
+      body: "404 Not Found",
+      headers: {}
+    ),
+    #"SYSTEM_SYSRULES_httpResponse_v1"(
+      /*
+      * If the query parameter "attachment" is set to true,
+      * set an HTTP header that tells the client that the body of the response
+      * should be downloaded. This overrides the default content-disposition
+      * of "inline; filename=&lt;filename&gt;.&lt;extension&gt;". We will automatically
+      * set the content-type and length.
+      */
+      headers: if(
+        http!request.queryParameters.attachment,
+        #"SYSTEM_SYSRULES_httpHeader"(
+          name: "Content-Disposition",
+          value: concat(
+            "attachment; filename=""",
+            document(
+              local!document,
+              "name"
+            ),
+            ".",
+            document(
+              local!document,
+              "extension"
+            ),
+            """"
+          )
+        ),
+        {}
+      ),
+      body: todocument(
+        local!document
+      )
+    )
+  )
+)</a:expression>
+        <a:urlAlias>4m9NwQ</a:urlAlias>
+        <a:httpMethod>GET</a:httpMethod>
+        <a:system>false</a:system>
+    </webApi>
+    <roleMap/>
+    <typedValue>
+        <type>
+            <name>WebApiRequest?list</name>
+            <namespace>http://www.appian.com/ae/types/2009</namespace>
+        </type>
+        <value>
+            <el>
+                <a:path/>
+                <a:body/>
+            </el>
+        </value>
+    </typedValue>
+    <history>
+        <historyInfo versionUuid="c2821715-0a79-4345-b540-e05612d8bf0b"/>
+        <historyInfo versionUuid="f1d3f837-c838-4411-8771-7e4f21eb2154"/>
+        <historyInfo versionUuid="26589955-8012-4b42-ac9c-8205fcd781c4"/>
+        <historyInfo versionUuid="2e52c7f4-6707-453d-aeaf-3e82db0781cc"/>
+        <historyInfo versionUuid="fb488ec8-2e4e-4e3c-92fa-a841f070869b"/>
+        <historyInfo versionUuid="5927b22f-34b0-4d9e-ac25-eb92b8052aaf"/>
+    </history>
+</webApiHaul>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <webApiHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <versionUuid>2e52c7f4-6707-453d-aeaf-3e82db0781cc</versionUuid>
+    <versionUuid>fb488ec8-2e4e-4e3c-92fa-a841f070869b</versionUuid>
     <webApi a:uuid="a5ad2e10-1edd-4f9d-9d74-107857e96d59" name="newWebAPI">
         <a:description></a:description>
         <a:expression>with(
@@ -10,7 +10,10 @@
     
     'type!{http://www.appian.com/ae/types/2009}Text?list',
     http!request.pathSegments
-  ),
+  ),   
+  
+  
+  
   local!document: tointeger(
     index(
       local!pathArray,
@@ -109,5 +112,6 @@
         <historyInfo versionUuid="f1d3f837-c838-4411-8771-7e4f21eb2154"/>
         <historyInfo versionUuid="26589955-8012-4b42-ac9c-8205fcd781c4"/>
         <historyInfo versionUuid="2e52c7f4-6707-453d-aeaf-3e82db0781cc"/>
+        <historyInfo versionUuid="fb488ec8-2e4e-4e3c-92fa-a841f070869b"/>
     </history>
 </webApiHaul>

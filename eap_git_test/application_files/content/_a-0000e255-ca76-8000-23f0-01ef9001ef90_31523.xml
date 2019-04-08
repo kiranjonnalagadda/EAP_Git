@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e255-ca76-8000-23f0-01ef9001ef90_33113</versionUuid>
+    <rule>
+        <name>trialInterface</name>
+        <uuid>_a-0000e255-ca76-8000-23f0-01ef9001ef90_31523</uuid>
+        <description></description>
+        <parentUuid>_a-0000e21d-e06a-8000-7d53-01ef9001ef90_48676</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>load(
+  local!employees: {
+    {id: 11, name: "Elizabeth Ward",  dept: "Engineering", role: "Senior Engineer",   team: "Front-End Components",     pto: 15, startDate: today()-500},
+    {id: 22, name: "Michael Johnson", dept: "Finance",     role: "Payroll Manager",   team: "Accounts Payable",         pto: 2,  startDate: today()-100},
+    {id: 33, name: "John Smith",      dept: "Engineering", role: "Quality Engineer",  team: "User Acceptance Testing",  pto: 5,  startDate: today()-1000},
+    {id: 44, name: "Diana Hellstrom", dept: "Engineering", role: "UX Designer",       team: "User Experience",          pto: 49, startDate: today()-1200},
+    {id: 55, name: "Francois Morin",  dept: "Sales",       role: "Account Executive", team: "Commercial North America", pto: 15, startDate: today()-700}
+  },
+  local!pagingInfo: #"SYSTEM_SYSRULES_pagingInfo"(startIndex: 1, batchSize: 5),
+  local!selectionInfo: #"SYSTEM_SYSRULES_gridSelection"(
+    pagingInfo: #"SYSTEM_SYSRULES_pagingInfo"(startIndex: 1, batchSize: 5),
+    selected: 44
+  ),
+  local!dataSubset: todatasubset(local!employees, local!pagingInfo),
+  local!data: index(local!dataSubset, "data", null),
+  local!selectedEmployee: local!employees[4],
+  {
+    #"SYSTEM_SYSRULES_columnsLayout"(
+      columns: {
+        #"SYSTEM_SYSRULES_columnLayout"(
+          contents: {
+            #"SYSTEM_SYSRULES_sectionLayout_v1"(
+              label: "Employees",
+              contents: {
+                #"SYSTEM_SYSRULES_gridField"(
+                  totalCount: local!dataSubset.totalCount,
+                  columns: {
+                    #"SYSTEM_SYSRULES_gridTextColumn"(
+                      label: "Name",
+                      data: index(local!data, "name", {})
+                    ),
+                    #"SYSTEM_SYSRULES_gridTextColumn"(
+                      label: "Department",
+                      data: index(local!data, "dept", {})
+                    )
+                  },
+                  identifiers: local!employees.id,
+                  value: local!selectionInfo,
+                  saveInto: {
+                    a!save(local!selectionInfo.selected, null),
+                    a!save(
+                      local!selectionInfo.selected,
+                      if(
+                        length(save!value.selected) &gt; 0,
+                        save!value.selected[length(save!value.selected)],
+                        save!value.selected
+                      )
+                    ),
+                    if(
+                      length(local!selectionInfo.selected) &gt; 0,
+                      a!save(local!selectedEmployee, displayvalue(local!selectionInfo.selected[1], local!employees.id, local!employees, {})),
+                      {}
+                    )
+                  },
+                  selection: true,
+                  selectionStyle: "ROW_HIGHLIGHT",
+                  shadeAlternateRows: false,
+                  rowHeader: 1
+                )
+              }
+            )
+          }
+        ),
+        #"SYSTEM_SYSRULES_columnLayout"(
+          contents: {
+            #"SYSTEM_SYSRULES_sectionLayout_v1"(
+              label: "Employee Details",
+              contents: {
+                #"SYSTEM_SYSRULES_columnsLayout"(
+                  columns: {
+                    #"SYSTEM_SYSRULES_columnLayout"(
+                      contents: {
+                        #"SYSTEM_SYSRULES_textField"(
+                          label: "Name",
+                          value: local!selectedEmployee.name,
+                          readOnly: true
+                        ),
+                        #"SYSTEM_SYSRULES_textField"(
+                          label: "Department",
+                          value: local!selectedEmployee.dept,
+                          readOnly: true
+                        )
+                      }
+                    ),
+                    #"SYSTEM_SYSRULES_columnLayout"(
+                      contents: {
+                        #"SYSTEM_SYSRULES_textField"(
+                          label: "Role",
+                          value: local!selectedEmployee.role,
+                          readOnly: true
+                        ),
+                        #"SYSTEM_SYSRULES_textField"(
+                          label: "Start Date",
+                          value: text(local!selectedEmployee.startDate, "MMM dd, yyyy"),
+                          readOnly: true
+                        )
+                      }
+                    ),
+                    #"SYSTEM_SYSRULES_columnLayout"(
+                      contents: {
+                        #"SYSTEM_SYSRULES_textField"(
+                          label: "Team",
+                          value: local!selectedEmployee.team,
+                          readOnly: true
+                        ),
+                        #"SYSTEM_SYSRULES_textField"(
+                          label: "Available PTO",
+                          value: local!selectedEmployee.pto &amp; " days",
+                          readOnly: true
+                        )
+                      }
+                    )
+                  }
+                )
+              },
+              showWhen: not(isnull(local!selectedEmployee))
+            )
+          }
+        )
+      }
+    )
+  }
+)</definition>
+        <metadataExpr></metadataExpr>
+        <preferredEditor>interface</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e255-ca76-8000-23f0-01ef9001ef90_31527"/>
+        <historyInfo versionUuid="_a-0000e255-ca76-8000-23f0-01ef9001ef90_33113"/>
+    </history>
+</contentHaul>

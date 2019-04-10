@@ -1,0 +1,8 @@
+
+    create table `test123` (
+        `ID` integer not null auto_increment,
+        `NAME` VARCHAR(250),
+        `TYPE` VARCHAR(250),
+        primary key (`ID`)
+    );
+

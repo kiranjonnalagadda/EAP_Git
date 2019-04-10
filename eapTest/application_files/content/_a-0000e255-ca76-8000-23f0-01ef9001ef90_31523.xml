@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <versionUuid>_a-0000e255-ca76-8000-23f0-01ef9001ef90_33391</versionUuid>
+    <versionUuid>_a-0000e255-ca76-8000-23f0-01ef9001ef90_33113</versionUuid>
     <rule>
         <name>trialInterface</name>
         <uuid>_a-0000e255-ca76-8000-23f0-01ef9001ef90_31523</uuid>
@@ -17,7 +17,7 @@
         </visibility>
         <definition>load(
   local!employees: {
-    {id: 11, name: "IRAni HEy Mangya Ward",  dept: "Engineering", role: "Senior Engineer",   team: "Front-End Components",     pto: 15, startDate: today()-500},
+    {id: 11, name: "Elizabeth Ward",  dept: "Engineering", role: "Senior Engineer",   team: "Front-End Components",     pto: 15, startDate: today()-500},
     {id: 22, name: "Michael Johnson", dept: "Finance",     role: "Payroll Manager",   team: "Accounts Payable",         pto: 2,  startDate: today()-100},
     {id: 33, name: "John Smith",      dept: "Engineering", role: "Quality Engineer",  team: "User Acceptance Testing",  pto: 5,  startDate: today()-1000},
     {id: 44, name: "Diana Hellstrom", dept: "Engineering", role: "UX Designer",       team: "User Experience",          pto: 49, startDate: today()-1200},
@@ -171,6 +171,5 @@
     <history>
         <historyInfo versionUuid="_a-0000e255-ca76-8000-23f0-01ef9001ef90_31527"/>
         <historyInfo versionUuid="_a-0000e255-ca76-8000-23f0-01ef9001ef90_33113"/>
-        <historyInfo versionUuid="_a-0000e255-ca76-8000-23f0-01ef9001ef90_33391"/>
     </history>
 </contentHaul>
